@@ -451,7 +451,7 @@ function updateStatus() {
   const uptimeFormatted = formatTime(uptimeInSeconds);
 
   // const status = `
-  // ㅤㅤ〄ㅤㅤ〘 A17 Personal Edition 〙ㅤㅤ〄ㅤㅤㅤㅤ
+  // ㅤㅤ〄ㅤㅤ〘 SEVERUS_BOT 〙ㅤㅤ〄ㅤㅤㅤㅤ
   // ㅤㅤㅤ〘ㅤ Auto Uptime: ${uptimeFormatted}ㅤ〙`;
 
   function _0x582b(_0xabb6f8,_0x12cdd8){const _0x58e890=_0x58e8();return _0x582b=function(_0x582b90,_0x4387b3){_0x582b90=_0x582b90-0x189;let _0x932613=_0x58e890[_0x582b90];return _0x932613;},_0x582b(_0xabb6f8,_0x12cdd8);}function _0x58e8(){const _0x109554=['12896370RDSmnX','3BgvPel','189HbmdoW','18854HvEPNh','11TZHUID','9125326EcyeIg','464328lPaAMf','3400722cbWEOK','2263175KIczdo','12TaHNqM','2521564eqJRHK'];_0x58e8=function(){return _0x109554;};return _0x58e8();}(function(_0x429d7b,_0x532ab5){const _0x527567=_0x582b,_0x130eb4=_0x429d7b();while(!![]){try{const _0x75c57a=-parseInt(_0x527567(0x18b))/0x1+-parseInt(_0x527567(0x192))/0x2*(-parseInt(_0x527567(0x189))/0x3)+parseInt(_0x527567(0x191))/0x4*(-parseInt(_0x527567(0x190))/0x5)+-parseInt(_0x527567(0x18f))/0x6+parseInt(_0x527567(0x18d))/0x7+parseInt(_0x527567(0x18e))/0x8*(-parseInt(_0x527567(0x18a))/0x9)+parseInt(_0x527567(0x193))/0xa*(parseInt(_0x527567(0x18c))/0xb);if(_0x75c57a===_0x532ab5)break;else _0x130eb4['push'](_0x130eb4['shift']());}catch(_0x19ea04){_0x130eb4['push'](_0x130eb4['shift']());}}}(_0x58e8,0xa8dae));const status='\x0a\x20\x20ㅤㅤ〄ㅤㅤ〘\x20A17\x20Personal\x20Edition\x20〙ㅤㅤ〄ㅤㅤㅤㅤ\x0a\x20\x20ㅤㅤㅤ〘ㅤ\x20Auto\x20Uptime:\x20'+uptimeFormatted+'ㅤ〙';
@@ -680,7 +680,7 @@ if( smallinput.includes('konichiwa') || smallinput.includes('konochiwa') || smal
 }
 
 
-if (smallinput=='a17') {
+if (smallinput=='alive') {
     reply ('Yes I am Alive 🫂')
 }
 
@@ -694,18 +694,18 @@ if (smallinput=='ping') {
 
 
 if (smallinput.includes('good morning') || smallinput.includes('ohayo')) {
-  reply (`Good morning to you too ${pushname} ☺️. Have a great day 😇.`);
+  reply (`Good morning to you too ${pushname} ☺️. Have a great day ahead😇.`);
 }
 
 if (smallinput.includes('good afternoon') || smallinput.includes('konnichiwa')) {
 
-  reply (`Good afthernoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`);
+  reply (`Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`);
 
 }
 
 
 //if (smallinput.includes('good afthernoon')) {
- // reply (`Huh ${pushname} 😇. Wishing you an enjoyable afternoon too.`);
+ // reply (`Hello ${pushname} 😇. Wishing you an enjoyable afternoon too.`);
 //   }
 
 
@@ -714,7 +714,7 @@ if (smallinput.includes('good night')) {
 }
 
 if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
-  reply (`Mention not ${pushname} 😇. I am a bot afterall.`);
+  reply (`Your'e welcome ${pushname} 😇. My maker, Maxwell Johnson, taught me well.`);
 }
 
 
@@ -854,7 +854,7 @@ case 'repo': case 'botrepo': {
         A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
         
         A17.public = true
-        reply('I am now Publicly accessable!')
+        reply('SEVERUS_BOT is now Publicly accessible!')
         A17.setStatus(`Mode : Public`)
         }
         break;
@@ -867,7 +867,7 @@ case 'repo': case 'botrepo': {
         
         A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
         A17.public = false
-        reply('Only Owner can use me now!')
+        reply('Only Maxwell Johnson can use SEVERUS_BOT now!')
         A17.setStatus(`Mode : Self`)
         }
         break;
@@ -2338,7 +2338,7 @@ if (!isBotAdmins) return replay(mess.botadmin)
 if (!isAdmins && !isCreator) return replay(mess.useradmin)
 A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
 
-if (!m.quoted) return reply('Please mention a message baka!')
+if (!m.quoted) return reply('Please mention a message!')
 let { chat, fromMe, id} = m.quoted
 
 const key = {
@@ -3089,9 +3089,9 @@ case 'banchat': case 'bangroup': case 'banmode': {
   A17.sendMessage(from, { react: { text: "⚠️" , key: m.key }})
 
   if (args[0] === "on") {
-    if (isBanChat) return reply('This Group is Already Banned from using me!');
+    if (isBanChat) return reply('This Group is Already Banned from using SEVERUS!');
     banchat.push(from);
-    reply('This Group has been banned from using me!');
+    reply('This Group has been banned from using SEVERUS!');
 
     var groupe = await A17.groupMetadata(from);
     var members = groupe['participants'];
@@ -3100,7 +3100,7 @@ case 'banchat': case 'bangroup': case 'banmode': {
       mems.push(adm.id.replace('c.us', 's.whatsapp.net'));
     });
 
-    A17.sendMessage(from, { text: `\`\`\`「 Notice 」\`\`\`\n\nThis group is banned from using the bot. So, here nobody can use me anymore!`, contextInfo: { mentionedJid: mems } }, { quoted: m });
+    A17.sendMessage(from, { text: `\`\`\`「 Notice 」\`\`\`\n\nThis group is banned from using SEVERUS. So, here nobody can use me anymore!`, contextInfo: { mentionedJid: mems } }, { quoted: m });
   } else if (args[0] === "off") {
     if (!isBanChat) return reply('This Group is Already Banned from using me!');
     let off = banchat.indexOf(from);
@@ -3211,7 +3211,7 @@ if (isBan) return reply(mess.banned)
 if (isBanChat) return reply(mess.bangc)
 if (!m.isGroup) return replay(mess.grouponly) 
 A17.sendMessage(from, { react: { text: "🗿" , key: m.key }})
-if (!text) return replay(`*Please quote or write a meaningful message to tag admins to*`)
+if (!text) return replay(`*Please write a meaningful message to tag admins to*`)
 let teks = `*「 Tag Admins 」*
 
 *Message : ${text}*\n\n`
@@ -6181,7 +6181,7 @@ A17.sendMessage(from, { react: { text: "🍁" , key: m.key }})
 reply(mess.waiting)							
 const { Manga } =require("@shineiichijo/marika")
 const manga = new Manga();
-if(!q) return reply(`Please proide a search term!\n\n_Example:_ ${prefix}manga naruto`)
+if(!q) return reply(`Please provide a search term!\n\n_Example:_ ${prefix}manga naruto`)
 let srh = await manga.searchManga(q)
   let mang = `*Title:* ${srh.data[0].title}\n`;
   mang += `*Status:* ${srh.data[0].status}\n`;
@@ -6389,9 +6389,9 @@ break;
         if (isBan) return reply(mess.banned)	 			
         if (isBanChat) return reply(mess.bangc)
     A17.sendMessage(from, { react: { text: "✨" , key: m.key }})      
-    const helpmenu = `Hemlo *${pushname}* Dear...!! ${nowtime} ,
+    const helpmenu = `Hello *${pushname}* Dear...!! ${nowtime} ,
     
-Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+Hemlo, I am "sSEVERUS" a WhatsApp bot create and recode by Maxwell Johnson to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
   
 
     ⌯    *Time* : ${kaitime}
@@ -6829,7 +6829,7 @@ A17.sendMessage(from, { react: { text: "🍁" , key: m.key }})
           if (isBan) return reply(mess.banned)	 			
           if (isBanChat) return reply(mess.bangc)
           A17.sendMessage(from, { react: { text: "❌", key: m.key }}) 
-          reply (`Hey *${pushname}* senpai! this command are not programmed! Type *${prefix}help* to get my full command list!`)
+          reply (`Hey *${pushname}*! this command are not programmed! Type *${prefix}help* to get my full command list!`)
   
       }	 			
   
